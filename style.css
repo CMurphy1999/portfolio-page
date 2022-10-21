@@ -1,30 +1,17 @@
 body {
-    color: var(--primary);
     font-size: 16px;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Arvo", sans-serif;
     margin: 0 auto;
     padding: 0 1rem;
-    background: var(--background);
+    background: #ffffe3;
     max-width: 1024px;
     box-sizing: border-box;
     transition: color 0.5s;
     transition: background 0.5s;
-  
-    --dark-background: #253a52;
-    --dark-primary: #FFFFE3;
-    --dark-link: #A9FE75;
-  
-    --light-background: #ffffe3;
-    --light-primary: #253a52;
-    --light-link: #1348da;
-  
-    --background: var(--light-background);
-    --primary: var(--light-primary);
-    --link: var(--light-link);
 }
   
 a {
-    color: var(--link);
+    color: black;
 }
 
 h1,
@@ -47,7 +34,7 @@ h3 {
 
 nav,
 section {
-  border-block-end: 1px solid var(--primary);
+  border-block-end: 1px 
 }
 
 header nav {
@@ -64,13 +51,13 @@ header nav ul {
 header nav li {
   display: inline;
   margin-inline-start: 1rem;
-  font-family: "Sora", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
 }
 
 header nav li a {
   text-decoration: none;
-  color: var(--primary);
+  color: black;
 }
 
 /* container for dark-mode toggle */
@@ -114,8 +101,6 @@ header .controls {
 a.btn {
   display: inline-flex;
   align-items: center;
-  background: var(--link);
-  color: var(--background);
   text-decoration: none;
   padding: 0 1rem;
   height: 2.5rem;
@@ -190,7 +175,6 @@ footer ul li {
 footer a {
   display: inline-flex;
   flex-direction: column;
-  color: var(--primary);
   text-decoration: none;
   font-family: "Sora", sans-serif;
   font-weight: 700;
@@ -203,8 +187,6 @@ footer .copywright {
 
 footer .link-icon {
   margin-block-start: 0.5rem;
-  background: var(--link);
-  color: var(--background);
   width: 3rem;
   height: 3rem;
   border-radius: 1.5rem;
