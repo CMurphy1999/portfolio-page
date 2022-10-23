@@ -5,15 +5,17 @@
         <link href="./style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-                <h1>Conor Murphy</h1>
+                <h1><a href = './myPage.html'>Conor Murphy</a></h1>
                 <ul>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                  <li><a class="navBar" href="./workPage.html">Projects</a></li>
+                  <li><a class="navBar" href="#">Resume</a></li>
+                  <li><a class="navBar" href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="controls">
@@ -27,26 +29,26 @@
             </div>
         </header>
         <section class="recent-work">
-            <h2>Recent Work</h2>
+            <h2>My Projects</h2>
             <article>
               <div>
                 <h3>Bruce Buffer Bot</h3>
-                <p>Measuring sentiment in real-world SMS data.</p>
+                <p>Random name generator, my first ever project.</p>
                 <strong>Feb 2022</strong>
                 <ul>
-                  <li>Imported large, complex datasets for text preprocessing</li>
-                  <li>Analyzed data for positive and negative sentiment using Language Parsing, Word Vectorization, and Topic Modeling</li>
-                  <li>Generated visualizations from results</li>
+                  <li>Created a generic introduction by famed UFC announcer Bruce Buffer, and used string interpolation to slot in random variables involved (name, weight, location etc).</li>
+                  <li>Utilized a while loop to ensure fighters names would never be duplicated. I also used conditional statements to decide whether the fight would be for a championship title.</li>
+                  <li>Although the syntax is simple and not challenging, the real learning experience was using it in conjunction with Git.</li>                  </li>
                 </ul>
                 <a href="#">GitHub Repo</a>
               </div>
-              <img class="article-img" src="https://static-assets.codecademy.com/assets/livestreams/national_coding_week/phone.png" />
+              <img class="article-img" src="https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/2020-04/bruce-buffer-hero.jpg?itok=nC3qxeyi" />
             </article>
           </section>
           <footer>
             <ul>
               <li>
-                <a href="#">
+                <a href="www.linkedin.com/in/conor-murphy-57b207230">
                   LinkedIn
                   <span class="link-icon">
                     <i class="fa-brands fa-linkedin"></i>
@@ -70,7 +72,6 @@
                 </a>
               </li>
             </ul>
-            <p class="copywright">© 2022 Kirby Desta</p>
           </footer>
       
         
