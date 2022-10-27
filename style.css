@@ -1,17 +1,32 @@
 body {
+    color: var(--primary);
     font-size: 16px;
     font-family: "Arvo", sans-serif;
     margin: 0 auto;
     padding: 0 1rem;
-    background: #ffffe3;
+    background: var(--background);
     max-width: 1024px;
     box-sizing: border-box;
     transition: color 0.5s;
     transition: background 0.5s;
+
+
+  --dark-background: #253a52;
+  --dark-primary: #FFFFE3;
+  --dark-link: #A9FE75;
+
+  --light-background: #ffffe3;
+  --light-primary: #253a52;
+  --light-link: #1348da;
+    
+
+    --background: var(--light-background);
+    --primary: var(--light-primary);
+    --link: var(--light-link);
 }
   
 a {
-    color: black;
+    color: var(--link);
 }
 
 h1,
@@ -34,7 +49,7 @@ h3 {
 
 nav,
 section {
-  border-block-end: 1px 
+  border-block-end: 1px solid var(--primary);
 }
 
 header nav {
@@ -57,7 +72,7 @@ header nav li {
 
 header nav li a {
   text-decoration: none;
-  color: black;
+  color: var(--primary);
 }
 
 /* container for dark-mode toggle */
@@ -101,6 +116,7 @@ header .controls {
 a.btn {
   display: inline-flex;
   align-items: center;
+  color: #ffffe3;
   text-decoration: none;
   padding: 0 1rem;
   height: 2.5rem;
@@ -108,6 +124,7 @@ a.btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
+  background: #1348da;
 }
 
 .recent-work {
@@ -176,6 +193,7 @@ footer a {
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+  color: var(--primary);
   font-family: "Sora", sans-serif;
   font-weight: 700;
   align-items: center;
@@ -187,6 +205,8 @@ footer .copywright {
 
 footer .link-icon {
   margin-block-start: 0.5rem;
+  background: var(--link);
+  color: var(--background);
   width: 3rem;
   height: 3rem;
   border-radius: 1.5rem;
